@@ -1,0 +1,206 @@
+FS1 now redirects to CFS2
+-Updated Register for CFS2
+-CFS2 now works with reporters, photo, section editors, everyone
+-Updated security of "Login Info" 
+-Navbar now changes based on role in newspaper
+-CFS1 can still be accessed by modifying the url of the address bar manually to "cfs" instead of cfs2, though thelionsroar.com/cfs redirects automatically to CFS2.
+
+1.14.13- 2.0.1 
+-Fixed Logout button not working on homepage
+-Fixed "Previous Issues" not formatting properly on Roarboard page
+-Fixed Navbar not showing correct active page
+
+1.14.13- 2.0.0 RELEASE
+-Added in record time:
+Users, 
+New Users, 
+Edit Pages, 
+Roarboard, 
+Photo table, 
+New Issue, 
+Edit User Settings, 
+delete user, 
+and any other set of features I'm forgetting!
+
+-Some bug fixes
+-CFS may still randomly delete articles as of now, so pleal save all work!
+-CFS2.0 is now completely ready for Senior Editors and above to use! (it will take some security work for reporters and such but for now its almost ready!) 
+-If you want to stick with the old CFS feel free, but all features have been implemented here(and it looks prettier). Plus I'd really appreciate some bug testing. (There will still be bugs obviously).
+-Hope is that it will be basically stable and bug free by Feb. 1
+
+
+1.12.13 -2.0 beta 3
+--------
+CFS 2.0 Updates
+-Fixed bug with edit page, still need to work on the placement of the save button
+-Added Color coded tables to homepage
+-Added Color coded tables to pages
+-Added sliding animation for previous issues. Click it! Its cool!
+
+1.11.13- 2.0 beta 2
+-Updated text editor! From 8:00 PM EST January 11th on, every new article and every currently unwritten article on CFS(both 1 and 2) will use the new CKeditor. This editor supports bold, italicizing, spellcheck, and a lot of new features which will allow better editing in general. 
+-Keep in mind that the editor still cannot autosave your article, so heavy editing/writing articles on CFS is still not advised.
+-On the other hand, italicizing, bolding and other style formats will be saved into the database. 
+-Old articles, due to compatibility with paragraph breaks, will still use the old textbox editor. 
+
+
+------
+CFS 2.0 updates
+-Added New Article
+-Converted to new text editor, see above
+
+1.11.13- 2.0 beta 1
+-Began working on CFS 2.0, beta. 
+-If you wish to see a very rough draft version, visit http://thelionsroar.com/cfs2
+-Expected to finish CFS 2.0 by February 1st. CFS 2.0 patch notes will be separated from old CFS patch notes
+-Changed CFS login to be prettier :)(same as CFS 2.0)
+-Fixed another bug with pages.php
+-Deleted a few ops articles by accident, sorry about that! Fourand should have fixed it.
+-----
+CFS 2.0 notes
+-Added new version of edit.php
+-Fixed fatal error with edit.php where it starts to override old articles
+-Added new login screen to edit.php
+-Made features available in CFS 1.0 available in 2.0 using legacy interface(for example, New Article still works, just goes to old interface for it)
+
+1.6.13 - 1.3.4
+-Updated pages.php so that you can view last issue's pages. Just go to "previous issues" then click the issue you want, then click pages.
+-Fixed andreas's cfs account for the 50th time.
+-Updated Roarboard. New rule for 29-5 awards(which are TBA): A section shall only receive points for Best Article if a senior editor on the section worked on the article, or heavily edited/rewrote the article. 
+
+12.15.12 - 1.3.3
+-Maintenance updates
+-Fixed bug where some people couldn't log in- if it still doesnt work tell me
+-Still searching for the tilde tilde bug
+-Added architecture to support reset passwords, will implement soon
+-Added architecture for uploading of files- will implement soon
+-Fixed a terribly embarrassing security issue
+-Gave lots of pleal points away for the holidays
+-Began documenting pleal points in "Pleal Point Counter"
+
+
+12.9.12 - 1.3.2
+-Fixed bugs
+-Fixed more bugs
+-Made sure all pages were HTML valid.
+-Added documentation and design information.
+-Commented some uncommented code
+-Fixed some more bugs
+-Polished for submission for CS50 project. That doesn't mean these patches are over, though!
+
+12.5.12- 1.3.1
+-Searching by author now also returns a list of staff member pages by that name.
+
+12.5.12- 1.3.0- MAJOR UPDATE
+
+-Encrypted all passwords for CFS as a security measure. Passwords on the database are no longer stored in plaintext. Hurrah!
+
+-NEW FEATURE: Added registering on CFS! Click "register" from the login screen to register a new account. All new accounts created this way will send an email(through James's Email Robot) to me, so any unauthorized or suspicious registrations can be deleted. Moreover, all new registered users start out as "reporter" and cannot modify their role without admin or senior staff. 
+
+-NEW FEATURE: Added changing account information! Now, at the bottom toolbar, a new link called "Change Account Info" will allow you to change your name, email, password, etc. It will NOT allow you to change your role or section. This right is reserved to admins and senior staff through user edit. You must type in your password in order to make any changes, for security reasons. Please remember to do so each time, or else it'll yell at you.
+
+
+-NEW FEATURE: Bio information! Now, from the Change Account Info box, you can add a little "about me" statement- known as Profile Information(newly registering users can also add one). Anything in the text box will be displayed on your own profile on the Roar website. Please refrain from writing any vulgar or otherwise inappropriate words.
+
+- NEW FEATURE: Pictures! Underneath the Profile Information box, there is a box to let you fill in a link to a photo of yourself, which will be displayed on the Roar website.
+Steps to add a photo to your profile:
+Find a photo of you, on a website(such as facebook).
+Right click, say copy image URL, or words to that effect. (If such a button does not exist, say "open image in new tab" then copy EVERYTHING in your address bar).
+Go the CFS and paste the link exactly as it says.
+Go to your Roar profile. Hopefully it worked!
+Tell me if there's any issues here. For an example, click on the link to "James" above.
+
+- Lots of bug fixes
+- Made system more secure to MYSQL Injection attacks
+- This may be the last big feature patch before I have to hand in my final project, so the next few patches will be 1.3.x, and have small edits, but no major additions. I need to make sure all my code is polished before submission! If you find any bugs or anything at all, please tell me! I won't be offended, I promise!
+
+
+12.4.12 - 1.2.2
+
+-Almost completely destroyed CFS. Almost.
+-Increased number of backups being made from 0 to infinity
+-Added new "Photographer" feature for articles. If you fill out the "Photographer" section on CFS, instead of saying "Photo Req'd" on the articles-list, CFS will name the photographer assigned to that photo. Photos and Graphics have been updated as well.
+
+12.3.12 - 1.2.1
+-Vastly increased performance and decreased loading times on section pages
+-Validated all pages via W3 standards(to an extent)
+-Fixed many, many, many, many, many, many, many, many bugs
+
+
+12.1.12 - 1.2.0
+
+-Added user support for thelionsroar.com! Go to any article, and any user that is registered on CFS will appear as a link. Clicking on the link will lead to a list of articles the user has written, as well as the user's name, yog and position on the Roar.
+-example: thelionsroar.com/reporter.php automatically defaults to Joe Joseph.
+-Because of this change, "Editor In Chief" is now a role on CFS. Editors in Chief have the same privileges as Administrators. Joe and Jenny have already been updated.
+
+-This means that both titles and authors of articles should have the full names of the reporters who wrote the articles once they are set To Web(or for old laid ones of course). Things like --> Editor or /editor should be removed at your convenience.
+-Changed CFS wallpaper to holiday theme, because it's December. yay.
+
+
+
+
+11.30.12 - 1.1.1
+-Added search feature to thelionsroar.com
+-Users can search by title, content or author
+-If you search your own name by author, you can check how many articles you've written for the Roar! Scroll downward to the bottom of the page and see "results found". Most likely it is missing some articles, because sometimes "author" on CFS isn't always exactly your name. (Joe Jospeh). James has written 17; Kylie has written 18; Tom Haskin wrote a whopping 38. How many has everyone else written?
+
+
+
+11.22.12 - 1.1.0
+-You can now browse the Lion's Roar archives via the homepage. Currently ordered by section.
+-Added new feature: jump to specific volume on section archive pages, as well as "back to top" links
+-Enabled all old volumes before 29-4 as we're not going to edit every one of them to be "To Web"
+-Feel free to read volumes 20, 21 and 22, which weren't available on CFS but are here!
+-All articles set "To Web" and any article set "ready to lay" before 29-4 are visible. 
+-Happy thanksgiving!!
+11.21.12 - 1.1.0b
+-New feature: To Web mode! If you set an article To Web, it will appear on our website at thelionsroar.com/articles.php
+-Changed thelionsroar.com's main color scheme back to white, looks better that way
+-Currently in beta testing phase, will add new features such as separation by section or author later.
+
+11.18.12 - 1.0.4
+-Fixed pages being added backwards when one creates a new issue
+-Changed theme to thanksgiving
+-Reworked archives slightly
+
+11.11.12 - 1.0.3b
+
+- Reconfigured RoarBoard scoring
+- Changed wallpaper theme to NSPA
+- Fixed "Ready to lay" on Pages page.
+
+
+11.4.12 - 1.0.3
+
+- -Added the Roar board to promote competition among sections.
+
+11.1.12 -1.0.2
+
+-Removed halloween
+-Added fall theme
+-Various bug patches
+-Added Volume-Issue buttons
+
+10.31.12- 1.0.1c
+
+-Added new "Pages" page for Senior Editors and Above. Organizes the pages, tells whether black or white and includes status of each page. Future editions will add links to upload PDFs.
+
+-Fixed various tiny bugs with 10.29.12 patch.
+-Fixed "Edit User", which was for some reason broken before. -.-
+
+10.30.12 - 1.0.1b
+
+-Added Halloween theme
+-Fixed performance issues
+-Moved editorials up to top right to solve formatting issues
+-Fixed security issues
+
+10.29.12 - 1.0.1
+
+-Added "Due Date" information into CFS
+-Fixed various security bugs
+-Promoted Community to the top right corner
+-Demoted Editorial to the bottom left corner
+
+10.20.12 -1.0.0
+-Baseline website thelionsroar.com released.
